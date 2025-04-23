@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Landing Page</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold">E-Commerce</a>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <li class="nav-item border border-secondary rounded">
+          <a class="nav-link active" href="#">Ana Sayfa</a>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Elektronik 
+          </a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item" href="#">Bilgisayar</a></li>
+            <li><a class="dropdown-item border-top border-bottom border-secondary" href="#">Telefon</a></li>
+            <li><a class="dropdown-item" href="#">Tablet</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Ev, Yaşam, Ofis, Kırtasiye 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mobilya</a></li>
+            <li><a class="dropdown-item border-top border-bottom border-secondary" href="#">Kalem/Defter</a></li>
+            <li><a class="dropdown-item" href="#">Ofis Ürünleri</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Moda 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kadın Giyim</a></li>
+            <li><a class="dropdown-item border-top border-secondary" href="#">Erkek Giyim</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Oto, Bahçe, Yapı, Market 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Oto</a></li>
+            <li><a class="dropdown-item border-top border-bottom border-secondary" href="#">Bahçe Malzemeleri</a></li>
+            <li><a class="dropdown-item border-bottom border-secondary" href="#">Yapı Malzemeleri</a></li>
+            <li><a class="dropdown-item" href="#">Market Ürünleri</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Anne, Bebek, Oyuncak 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Anne Ürünleri</a></li>
+            <li><a class="dropdown-item border-top border-bottom border-secondary" href="#">Bebek Ürünleri</a></li>
+            <li><a class="dropdown-item" href="#">Oyuncaklar</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Spor, Outdoor 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Spor Ürünleri</a></li>
+            <li><a class="dropdown-item border-top border-secondary" href="#">Outdoor</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Kozmetik, Kişisel Bakım 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kozmetik</a></li>
+            <li><a class="dropdown-item border-top border-secondary" href="#">Kişisel Bakım</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Süpermarket, Petshop 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Süpermarket</a></li>
+            <li><a class="dropdown-item border-top border-secondary" href="#">Petshop</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown border border-secondary rounded">
+          <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+             Kitap,Müzik, Film,Hobi 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kitaplar</a></li>
+            <li><a class="dropdown-item border-top border-bottom border-secondary" href="#">Filmler</a></li>
+            <li><a class="dropdown-item border-bottom border-secondary" href="#">Müzikler</a></li>
+            <li><a class="dropdown-item" href="#">Hobiler</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar -->
+
+<!-- Kampanyalar -->
+
+<div class="container-fluid py-4" style="background-color: #e9ecef;">
+  <h5 class="fw-bold text-center mb-4">Kampanyalar</h5>
+  <div class="d-flex flex-nowrap overflow-auto justify-content-center px-2" id="kategori-box-container">  
+  </div>
+</div>
+
+<!-- Kampanyalar -->
+
+
+<!-- Slider ve Fırsatlar -->
+
+<div class="container-fluid py-4">
+  <div class="row justify-content-center">
+
+    <!-- Slider -->
+    <div class="col-lg-6 col-md-12 mb-3">
+      <div id="mainSlider" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner" id="main-slider-inner">
+
+        </div>
+
+        <!-- Oklar -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        </button>
+        <!-- Oklar -->
+        
+      </div>
+    </div>
+    <!-- Slider -->
+
+    <!-- Fırsatlar -->
+<div class="col-lg-6 col-md-12">
+  <div id="elektronikFirsatlarCarousel" class="carousel slide position-relative rounded overflow-hidden shadow-sm" data-bs-ride="carousel" data-bs-interval="3000" style="height: 260px;">
+
+    <!-- Arka plan -->
+    <img src="pictures/Sale1.jpg" alt="Elektronik Fırsatlar" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+    <!-- Arka plan -->
+
+
+    <!-- Ürünler -->
+    <div class="carousel-inner position-absolute end-0 bottom-0 mb-2 me-3 bg-white text-dark rounded shadow p-3"
+         style="max-width: 400px; min-width: 300px; z-index: 2; opacity: 0.90;" id="firsat-carousel-content">
+    </div>
+    <!-- Ürünler -->
+
+  </div>
+</div>
+    <!-- Fırsatlar -->
+  </div>
+</div>
+<!-- Slider ve Fırsatlar -->
+
+
+<!-- Sana Özel Öneriler -->
+<div class="container my-2">
+  <h5 class="fw-bold mb-4">Sana Özel Öneriler</h5>
+  <div id="ozel-oneriler" class="row g-3"></div>
+</div>
+</div>
+<!-- Sana Özel Öneriler -->
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Kampanyalar -->
+<script>
+  fetch("https://run.mocky.io/v3/db57a7bc-837b-4c7e-b353-90ce40d82b24") // Buraya kendi mock API linkini yaz
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("kategori-box-container");
+
+      data.categories.forEach(category => {
+        const box = document.createElement("div");
+        box.className = "col-6 col-sm-4 col-md-3 col-lg-1 flex-shrink-0 me-3";
+
+        box.innerHTML = `
+          <a href="${category.link}" class="text-decoration-none">
+            <div class="bg-light border rounded shadow-sm text-center p-2 h-100" style="height: 180px;">
+              <img src="${category.image}" alt="${category.name}" class="img-fluid mb-2" style="max-height: 70px;">
+              <div class="small text-secondary">${category.name}</div>
+            </div>
+          </a>
+        `;
+
+        container.appendChild(box);
+      });
+    })
+    .catch(err => console.error("API'den kategori verisi alınamadı:", err));
+</script>
+<!-- Kampanyalar -->
+
+
+<!-- Slider -->
+<script>
+  fetch("https://run.mocky.io/v3/c3a06fbd-2e4e-4fe6-9f56-bf801696eb8f")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("main-slider-inner");
+      data.slides.forEach((slide, index) => {
+        const item = document.createElement("div");
+        item.className = "carousel-item" + (index === 0 ? " active" : "");
+        item.innerHTML = `
+          <a href="${slide.link}">
+            <img src="${slide.image}" class="d-block w-100" alt="${slide.alt}" style="max-height: 250px; object-fit: contain;">
+          </a>
+        `;
+        container.appendChild(item);
+      });
+    });
+</script>
+<!-- Slider -->
+
+
+
+
+<!-- Fırsatlar -->
+<script>
+  fetch("https://run.mocky.io/v3/356b3560-3247-42c8-8777-9fb980295225")
+    .then(response => response.json())
+    .then(data => {
+      const carousel = document.getElementById("firsat-carousel-content");
+      const firsatUrunleri = data.products.slice(0, 3); // İlk 3 ürünü al
+
+      firsatUrunleri.forEach((product, index) => {
+        const item = document.createElement("div");
+        item.className = "carousel-item" + (index === 0 ? " active" : "");
+
+        item.innerHTML = `
+          <div class="d-flex align-items-center" style="min-height: 125px;">
+            <img src="${product.image}" alt="${product.title}" style="width: 80px; height: 80px; object-fit: contain;" class="me-3">
+            <div class="flex-grow-1">
+              <p class="small text-muted mb-1">${product.title}</p>
+              <p class="fw-bold mb-2">${product.price}</p>
+              <button class="btn btn-sm btn-primary w-100">Sepete Ekle</button>
+            </div>
+          </div>
+        `;
+
+        carousel.appendChild(item);
+      });
+    });
+</script>
+<!-- Fırsatlar -->
+
+
+
+<!-- Öneriler -->
+<script>
+  fetch("https://run.mocky.io/v3/e9e25bda-7158-4024-b7d8-0846d212a478")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.querySelector("#ozel-oneriler");
+      data.products.forEach(product => {
+        const card = `
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="${product.link}" class="text-decoration-none text-dark">
+              <div class="card h-100 shadow-sm">
+                <img src="${product.image}" class="card-img-top p-2" style="object-fit: contain; height: 150px;" alt="${product.title}">
+                <div class="card-body p-2">
+                  <h6 class="card-title small mb-1">${product.title}</h6>
+                  <div class="text-warning small mb-1">
+                    ${"★".repeat(product.rating)}${"☆".repeat(5 - product.rating)}
+                  </div>
+                  <p class="fw-bold small mb-0 text-success">${product.price}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        `;
+        container.innerHTML += card;
+      });
+    });
+</script>
+
+<!-- Öneriler -->
+
+
+
+</body>
+</html>
